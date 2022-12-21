@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@400;700;900&family=Lexend+Deca&family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    background-color: #F3F5FC;
+    font-family: Inter;
+    overflow-x: hidden;
+}
+
+.principal {
+    height: 100vh;
+    width: 100%;
+}
+
+.logo{
+    padding: 20px 0 0 85px;
+    color: #0A3871;
+    font-size: 100px;
+    font-weight: 100;
+}
+
+.textbox {
+    margin: 50px auto 20px 200px;
+}
+.textbox textarea {
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    width: 600px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.textbox textarea::placeholder {
+    color: #0A3871;
+}
+
+section {
+    position: absolute;
+    width: 400px;
+    height: 100vh;
+    right: 40px;
+    top: 0;
+    padding: 40px 0;
+}
+.section-mensaje {
+    background-color: white;
+    height: 100%;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 32px;
+    gap: 10px 0;
+    position: relative;
+}
+.section-mensaje p:first-of-type {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+.section-mensaje p:last-of-type {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+#sin-mensaje {
+    display: block;
+}
+#con-mensaje {
+    height: 100%;
+    width: 100%;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+#texto-mostrar {
+    background-color: white;
+    height: 700px;
+    border: none;
+    outline: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 150%;
+    color: #495057;
+    resize: none;
+}
+.button-copiar {
+    padding: 24px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    background-color: white;
+    color: #0A3871;
+}
+.button-copiar:hover {
+    cursor: pointer;
+}
+
+.war-bot {
+    position: absolute;
+    left: 200px;
+    bottom: 72px;
+    width: 680px;
+}
+.warning {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+.warning img{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+.warning p {
+    color: #495057;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    opacity: 0.8;
+}
+
+.botones {
+    display: flex;
+    gap: 0 20px;
+    justify-content: space-between;
+}
+.encriptar {
+    color: white;
+    padding: 10px;
+    background-color: #0A3871;
+    border-radius: 24px;
+    border: none;
+    width: 320px;
+    height: 65px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+.encriptar:hover {
+    background-color: #124583;
+    cursor: pointer;
+}
+.desencriptar {
+    color: #0A3871;
+    background-color: #D8DFE8;
+    padding: 10px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    width: 320px;
+    height: 65px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+.desencriptar:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media (max-width: 1380px) {
+    .logo{
+        padding: 20px 40px 0 40px;
+    }
+    .textbox {
+        margin: 50px 50px 20px 40px;
+    }
+    .war-bot {
+        position: absolute;
+        left: 40px;
+        bottom: 72px;
+    }
+}
+@media (max-width: 1180px) {
+    .war-bot {
+        position: absolute;
+        left: 40px;
+        top: 600px;
+    }
+    section {
+        position: absolute;
+        width: 100%;
+        height: 250px;
+        left: 0;
+        top: 73vh;
+        padding: 40px 40px;
+    }
+    .section-mensaje {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 32px;
+    }
+    #sin-mensaje img {
+        display: none;
+    }
+}
+@media (max-width: 740px) {
+    #texto {
+        width: 100%;
+    }
+    .war-bot {
+        display: flex;
+        flex-direction: column;
+        top: 500px;
+        width: 100%;
+        left: 0;
+        padding: 0 40px;
+    }
+    .botones {
+        display: flex;
+        flex-direction: column;
+        gap: 24px 0;
+    }
+    .encriptar, .desencriptar {
+        width: 100%;
+    }
+}

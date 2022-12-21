@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    
+    <div class="principal">
+        <header>
+            <h1 class="logo">OnE</h1>
+        </header>
+    
+        <div class="textbox">
+            <textarea id="texto" rows="7"  placeholder="Ingrese el texto aquí" ></textarea>
+        </div>
+
+        <div class="war-bot">
+            <div class="warning">
+                <img src="./img/warning.svg" alt="img-warning">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button onclick="encriptar()" class="encriptar">Encriptar</button>
+                <button onclick="desencriptar()" class="desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <section>
+            <div class="section-mensaje">
+                <div id="sin-mensaje">
+                    <img src="./img/Muñeco.png" alt="imagen-figura" >
+                    <p>Ningún mensaje fué encontrado</p>
+                    <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+                </div>
+                <div id="con-mensaje">
+                    <textarea id="texto-mostrar" ></textarea>
+                    <button onclick="copiar()" class="button-copiar">Copiar</button>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
